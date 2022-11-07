@@ -1,0 +1,20 @@
+{
+  "name": "droneapi",
+  "version": "1.0.0",
+  "description": "Drone API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node Drones/server.js",
+    "server": "nodemon Drones/server.js"
+  },
+  "author": "Samuel Pius",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
