@@ -1,8 +1,10 @@
 const express = require('express')
 const router = express.Router()
 
-const {registerDrone}= require('../controllers/droneController')
+const {registerDrone,getDrones}= require('../controllers/droneController')
 
-router.get('/',registerDrone)
+
+router.post('/',registerDrone)
+router.get('/',getDrones)
 
 module.exports = router
