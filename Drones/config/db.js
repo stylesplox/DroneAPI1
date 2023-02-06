@@ -15,7 +15,7 @@ const mongoose = require('mongoose')
 
 const connectDB = async () => {
     try{
-        const conn = await mongoose.connect(process.env.MONGO_COMPASS)
+        const conn = await mongoose.connect("mongodb://admin:password@localhost:27017", {dbName: 'drobedb'})
         console.log(`MongoDB Connected: ${conn.connection.host}`.cyan.underline)
 
     }catch (error){
