@@ -3,6 +3,8 @@ const router = express.Router()
 
 const {createMedication,getMedications}= require('../controllers/medicationController')
 
-router.post('/',createMedication,getMedications)
+router.post('/',createMedication)
+router.get('/',getMedications)
+
 
 module.exports = router

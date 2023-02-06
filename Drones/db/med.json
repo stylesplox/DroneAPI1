@@ -1,0 +1,11 @@
+{
+    "medication":[
+        {
+            "code": 2334,
+            "name": "Parasitamol",
+            "weight": 200
+
+        }
+        
+    ]
+}
