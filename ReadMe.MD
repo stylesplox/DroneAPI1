@@ -12,5 +12,8 @@
 
 # Unzip DroneAPI.zip
 
+# postman routes
+- drone.postman_collection.json
+
 # start app
 npm start
