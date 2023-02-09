@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "9e9df0c6-66dd-4b4a-8b2c-bc8c5f91c3f3",
+		"name": "drone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2201518"
+	},
+	"item": [
+		{
+			"name": "getDrones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/drone/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"drone",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createDrone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "serialNumber",
+							"value": "WE2345",
+							"type": "text"
+						},
+						{
+							"key": "model",
+							"value": "Cruiserweight",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/drone/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"drone",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMeds",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "miver",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "120",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "VF-ATYV49",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/med/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"med",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createMedication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Aldomet",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "40",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "RE-FDFSGV",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/med/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"med",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loading drone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "code",
+							"value": "RE-FDFSGV",
+							"type": "text"
+						},
+						{
+							"key": "serialNumber",
+							"value": "WE2345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/drone/load",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"drone",
+						"load"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ckMedofDrone",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/drone/WE2345/meds",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"drone",
+						"WE2345",
+						"meds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "availDrone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/drone/availableDrones",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"drone",
+						"availableDrones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkBattery",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/drone/droneBattery/WE2345",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"drone",
+						"droneBattery",
+						"WE2345"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "droneRecharge",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "serialNumber",
+							"value": "WE2345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/drone/recharge/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"drone",
+						"recharge",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
